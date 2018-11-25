@@ -9,7 +9,7 @@ const getHeaders = function(token) {
 const get = function(route, token, cb) {
   axios.get(baseUrl + route, getHeaders(token)).then((res) => {
     if(res.status === 200 && res.data.data) {
-      cb(res.data, null);
+      cb(res.data.data, null);
     } else {
       cb(null, res.data.message);
     }
