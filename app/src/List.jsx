@@ -26,12 +26,17 @@ export default class List extends Component {
   render() {
     return (
       <div className="ListWrapper">
-        <h1>List</h1>
+        <h1>Clusters</h1>
         {this.state.error && <div className="Error">{this.state.error}</div>}
-        {this.state.isLoading && <div className="Loading">...</div>}
         <div className="List">
-          { this.state.list.map((item, i) => (
-            <div key={item.id}>{item.name}</div>
+          {this.state.isLoading && <div className="Loading">Loading...</div>}
+          {this.state.list.map((cluster, i) => (
+            <div key={i} className="Cluster">
+              <h3>Cluster {i+1}</h3>
+              { cluster.map((blog, j) => (
+                <div key={j}>{blog}</div>
+              ))}
+            </div>
           ))}
         </div>
       </div>

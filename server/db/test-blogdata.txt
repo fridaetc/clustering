@@ -1,0 +1,9 @@
+Blog	bil	bat	anka	soffa	bord	idag
+Fordon 1	10	6	2	3	1	3
+Mobler 2	2	0	1	9	10	0
+Fordon 3	6	14	2	3	1	2
+Bloggg 4	1	0	2	2	0	3
+Mobler 5	0	1	0	16	6	1
+Mobler 6	2	0	1	7	20	3
+Mobler 7	0	0	1	7	17	3
+Mobler 8	1	0	1	7	18	3

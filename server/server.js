@@ -64,8 +64,6 @@ app.post('/login', (req, res) => {
 app.get('/list', (req, res) => {
   checkToken(req, res, function(userId) {
     if(userId) {
-      //do stuff
-      console.log("DOOOO");
       clustering.cluster(function(data) {
         res.status(200).send({data});
       });
