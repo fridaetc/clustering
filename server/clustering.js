@@ -67,8 +67,8 @@ function kCluster(rows, k=5) {
       bestMatches[bestMatch].push(j);
     }
 
-    if(bestMatches == lastMatches) { break; }
-    lastMatches = bestMatches;
+    if(JSON.stringify(bestMatches) == lastMatches) { break; }
+    lastMatches = JSON.stringify(bestMatches);
 
     for(let m = 0; m < k; m++) {
       let avgs = new Array(rows[0].length);
